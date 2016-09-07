@@ -1,9 +1,9 @@
 {
-  "name": "angular-sacffold",
+  "name": "Nelson Cardenas",
   "authors": [
-    "Viktor Zavala <viktor@acklenavenue.com>"
+    "Nelson Cardenas"
   ],
-  "description": "AngularJS scaffold app with Hapi server serving it",
+  "description": "Play now Web Application",
   "main": "index.html",
   "moduleType": [],
   "keywords": [
@@ -28,5 +28,6 @@
     "gulp": "~3.9.0",
     "bootstrap-css": "~3.3.4",
     "ngstorage": "~0.3.10"
-  }
+  },
+  "private": true
 }
