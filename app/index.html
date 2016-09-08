@@ -14,7 +14,7 @@
 	<link href="../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 	
 	<!-- bower:css -->
-    <link rel="stylesheet" href="../bower_components/bootstrap-css/css/bootstrap.min.css">	
+	<link rel="stylesheet" href="../bower_components/bootstrap-css/css/bootstrap.min.css">	
 
 	<!-- Custom stylesheet -->
 	<link rel="stylesheet" href="styles/assets/css/style.css">
@@ -36,13 +36,17 @@
 </head>
 <body >
 	<nav class="navbar navbar-inverse">
-		<div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">
-        <!--<img alt="Brand" src="styles/assets/images/PlaynowLogo.png"--> 
-      </a>
-    </div>
-  </div>
+		<div class="container-fluid" >
+			<div class="navbar-header pull-right">
+				<form class="navbar-form navbar-right" role="search">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="username">-
+						<input type="password" class="form-control" placeholder="password">-
+						<button type="submit" class="btn btn-success">Log in</button>
+					</div>
+				</form>
+			</div>
+		</div>
 	</nav>
 	<div class="bg">
 		<div class="bg-color">
@@ -75,11 +79,11 @@
 									<p class="alert-warning"></p>
 									<form class="newsletter-signup" role="form">
 									</div>                    
-									<p class="followus"></p>
+									<p class="followus">Follow us</p>
 									<ul class="social-icon">
-										<li><a href="https://www.instagram.com/playnowhn/?hl=es"><i class="fa fa-camera-retro"></i></a></li>
-										<li><a href="https://www.facebook.com/PLAYnow-365378130518585/"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="https://twitter.com/playnowhn"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="https://www.instagram.com/playnowhn/?hl=es"><i class="fa fa-camera-retro">Instagram </i></a></li>
+										<li><a href="https://www.facebook.com/PLAYnow-365378130518585/"><i class="fa fa-facebook">Facebook </i></a></li>
+										<li><a href="https://twitter.com/playnowhn"><i class="fa fa-twitter">Twitter </i></a></li>
 									</ul>              
 								</div>
 							</div>
@@ -126,10 +130,10 @@
 	</body>
 	<script src="../bower_components/jquery/dist/jquery.js"></script>
 
-  <script src="../bower_components/angular/angular.js"></script>
+	<script src="../bower_components/angular/angular.js"></script>
 
-  <script src="../bower_components/bootstrap-css/js/bootstrap.min.js"></script>
+	<script src="../bower_components/bootstrap-css/js/bootstrap.min.js"></script>
 
-  <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
 
 	</html>
