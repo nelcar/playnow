@@ -1,70 +1,135 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Angular JS Scaffold app.</title>
-    <!-- inject:css -->
-    <link rel="stylesheet" href="styles/style.css">
-    <!-- endinject -->
+<head>
+	<meta charset="UTF-8">
+	<title>PLAY now</title>
+	<meta name="description" content="PLAY Now">
+	<meta name="author" content="Nelson Cardenas">
+	<!-- Mobile Specific Meta -->   
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
 
-    <!-- bower:css -->
-    <link rel="stylesheet" href="/bootstrap-css/css/bootstrap.min.css">
-    <!-- endinject -->
-  </head>
-  <body ng-app="AngularScaffold">
-    <div ng-controller="NavbarController">
-      <nav class="navbar navbar-default">
-        <div class="container-fluid" >
-          <div class="navbar-header pull-right">
-            <form class="navbar-form navbar-right" role="search">
-              <div class="form-group" ng-show="!$sessionStorage.currentUser">
-                <input type="text" class="form-control" placeholder="username" ng-model="user.username">
-                <input type="password" class="form-control" placeholder="password" ng-model="user.password">
-                <button type="submit" class="btn btn-default" ng-click="login(user)">Log in</button>
-                <button type="submit" class="btn btn-default" ng-click="register()">Register!</button>
-              </div>
-              <div class="row">
-                  <button type="submit" class="btn btn-default" ng-click="logout()" ng-show="$sessionStorage.currentUser">Log out</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </nav>
-      <div ng-show="$sessionStorage.currentUser">
-        <h1>Bienvenido {{$sessionStorage.currentUser.username}}</h1>
-        <ul>
-          Sus roles son:
-          <li ng-repeat="role in $sessionStorage.currentUser.scope">{{role}}</li>
-        </ul>
-      </div>
+	<!-- Bootstrap -->
+	<link href="styles/assets/css/bootstrap.css" rel="stylesheet">
+	<link href="../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+	
+	<!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/bootstrap-css/css/bootstrap.min.css">	
+
+	<!-- Custom stylesheet -->
+	<link rel="stylesheet" href="styles/assets/css/style.css">
+	<link rel="stylesheet" href="styles/assets/css/responsive.css">
+	<link rel="stylesheet" href="styles/assets/css/TimeCircles.css">
+
+	<!-- Font Awesome -->
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Added google font -->
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700|Lobster|Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+
+	<!--Fav and touch icons-->
+	<link rel="shortcut icon" href="styles/assets/images/icons/favicon.ico">
+	<link rel="apple-touch-icon" href="styles/assets/images/icons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="styles/assets/images/icons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="styles/assets/images/icons/apple-touch-icon-114x114.png">
+
+</head>
+<body >
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <!--<img alt="Brand" src="styles/assets/images/PlaynowLogo.png"--> tamRic>
+      </a>
     </div>
-    <div class="container">
-      <div ui-view></div>
   </div>
-  </body>
+	</nav>
+	<div class="bg">
+		<div class="bg-color">
+			<div class="container content">
 
-  <!-- bower:js -->
+				<div class="row">
+					<div class="sun clearfix">
+						<div class="col-sm-12">
+							<h1>PlayNow</h1>
+							<h3>we are almost ready to</h3>
+							<h2>launch our website</h2>        
+						</div>
+						<div id="left-block" class="col-sm-4 text-center">
+							<img class="img-responsive" src="styles/assets/images/tab.png" alt="tab"/>
+						</div>
+						<div id="right-block" class="col-sm-8">
+							<div class="row">
+								<div class="col-sm-offset-1 col-sm-10">
+									<div class="timing">
+										<div id="count-down" data-date="2016-12-15 00:00:00">
+											
+										</div>
+									</div>
+									<!-- /.timing -->
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-offset-2 col-sm-8">
+									<p class="alert-success"></p>
+									<p class="alert-warning"></p>
+									<form class="newsletter-signup" role="form">
+									</div>                    
+									<p class="followus"></p>
+									<ul class="social-icon">
+										<li><a href="https://www.instagram.com/playnowhn/?hl=es"><i class="fa fa-camera-retro"></i></a></li>
+										<li><a href="https://www.facebook.com/PLAYnow-365378130518585/"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="https://twitter.com/playnowhn"><i class="fa fa-twitter"></i></a></li>
+									</ul>              
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- .container end here -->
+				</div>
+			</div>
 
-  <script src="/jquery/dist/jquery.js"></script>
 
-  <script src="/angular/angular.js"></script>
 
-  <script src="/angular-ui-router/release/angular-ui-router.js"></script>
+			<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+			<!-- Include all compiled plugins (below), or include individual files as needed -->
+			<script src="styles/assets/js/bootstrap.min.js"></script>
+			<script src="styles/assets/js/TimeCircles.js"></script>
+			<script src="styles/assets/js/jquery.ajaxchimp.min.js"></script>
+			<script src="styles/assets/js/script.js"></script>
+			<script src="styles/assets/js/jquery.placeholder.js"></script>
+			<script type="text/javascript">
+				$(function() {
+				// Invoke the plugin
+				$('input, textarea').placeholder();
+			});
+		</script>
+		<script>
+			$("#count-down").TimeCircles(
+			{   
+				circle_bg_color: "#8a7f71",
+				use_background: true,
+				bg_width: 1.0,
+				fg_width: 0.02,
+				time: {
+					Days: { color: "#fefeee" },
+					Hours: { color: "#fefeee" },
+					Minutes: { color: "#fefeee" },
+					Seconds: { color: "#fefeee" }
+				}
+			}
+			);
 
-  <script src="/bootstrap-css/js/bootstrap.min.js"></script>
+		</script>
 
-  <script src="/ngstorage/ngStorage.js"></script>
+	</body>
+	<script src="../bower_components/jquery/dist/jquery.js"></script>
 
-  <script src="/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="../bower_components/angular/angular.js"></script>
 
-  <!-- endinject -->
+  <script src="../bower_components/bootstrap-css/js/bootstrap.min.js"></script>
 
-  <script src="app.js"></script>
+  <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
 
-  <!-- inject:js -->
-  <script src="scripts/controllers/HomeController.js"></script>
-  <script src="scripts/controllers/navbarController.js"></script>
-  <script src="scripts/services/authService.js"></script>
-  <script src="scripts/services/HomeService.js"></script>
-  <!-- endinject -->
-</html>
+	</html>
